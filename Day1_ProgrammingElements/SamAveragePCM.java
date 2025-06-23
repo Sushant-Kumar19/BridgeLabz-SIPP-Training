@@ -1,3 +1,5 @@
+package Day1_ProgrammingElements;
+
 public class SamAveragePCM {
     public static void main(String[] args) {
         int maths = 94;
@@ -6,4 +8,4 @@ public class SamAveragePCM {
         double average = (maths + physics + chemistry) / 3.0;
         System.out.printf("Sam's average mark in PCM is %.2f\n", average);
     }
-} 
+}

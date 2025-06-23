@@ -1,3 +1,5 @@
+package Day1_ProgrammingElements;
+
 import java.util.Scanner;
 
 public class PoundsToKg {
@@ -9,4 +11,4 @@ public class PoundsToKg {
         System.out.printf("The weight of the person in pounds is %.2f and in kg is %.2f\n", pounds, kg);
         scanner.close();
     }
-} 
+}

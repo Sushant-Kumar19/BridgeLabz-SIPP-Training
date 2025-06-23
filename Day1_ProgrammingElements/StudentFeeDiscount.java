@@ -1,3 +1,5 @@
+package Day1_ProgrammingElements;
+
 import java.util.Scanner;
 
 public class StudentFeeDiscount {
@@ -12,4 +14,4 @@ public class StudentFeeDiscount {
         System.out.printf("The discount amount is INR %.2f and final discounted fee is INR %.2f\n", discount, finalFee);
         scanner.close();
     }
-} 
+}

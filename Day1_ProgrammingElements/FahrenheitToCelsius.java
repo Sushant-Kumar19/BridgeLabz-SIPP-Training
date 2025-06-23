@@ -1,3 +1,5 @@
+package Day1_ProgrammingElements;
+
 import java.util.Scanner;
 
 public class FahrenheitToCelsius {
@@ -9,4 +11,4 @@ public class FahrenheitToCelsius {
         System.out.printf("The %.2f fahrenheit is %.2f celsius\n", fahrenheit, celsius);
         scanner.close();
     }
-} 
+}

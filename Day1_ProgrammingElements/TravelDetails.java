@@ -1,3 +1,5 @@
+package Day1_ProgrammingElements;
+
 import java.util.Scanner;
 
 public class TravelDetails {
@@ -21,7 +23,9 @@ public class TravelDetails {
         double timeViaToFinalCity = scanner.nextDouble();
         double totalDistance = fromToVia + viaToFinalCity;
         double totalTime = timeFromToVia + timeViaToFinalCity;
-        System.out.printf("%s is travelling from %s to %s via %s. Total distance is %.2f miles and total time is %.2f hours.\n", name, fromCity, toCity, viaCity, totalDistance, totalTime);
+        System.out.printf(
+                "%s is travelling from %s to %s via %s. Total distance is %.2f miles and total time is %.2f hours.\n",
+                name, fromCity, toCity, viaCity, totalDistance, totalTime);
         scanner.close();
     }
-} 
+}

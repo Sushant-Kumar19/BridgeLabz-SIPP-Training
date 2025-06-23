@@ -1,3 +1,5 @@
+package Day1_ProgrammingElements;
+
 import java.util.Scanner;
 
 public class SimpleInterest {
@@ -10,7 +12,8 @@ public class SimpleInterest {
         System.out.print("Enter time: ");
         double time = scanner.nextDouble();
         double simpleInterest = (principal * rate * time) / 100.0;
-        System.out.printf("The Simple Interest is %.2f for Principal %.2f, Rate of Interest %.2f and Time %.2f\n", simpleInterest, principal, rate, time);
+        System.out.printf("The Simple Interest is %.2f for Principal %.2f, Rate of Interest %.2f and Time %.2f\n",
+                simpleInterest, principal, rate, time);
         scanner.close();
     }
-} 
+}

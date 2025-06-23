@@ -1,3 +1,5 @@
+package Day1_ProgrammingElements;
+
 import java.util.Scanner;
 
 public class ChocolateDistribution {
@@ -9,7 +11,9 @@ public class ChocolateDistribution {
         int numberOfChildren = scanner.nextInt();
         int perChild = numberOfChocolates / numberOfChildren;
         int remaining = numberOfChocolates % numberOfChildren;
-        System.out.printf("The number of chocolates each child gets is %d and the number of remaining chocolates is %d\n", perChild, remaining);
+        System.out.printf(
+                "The number of chocolates each child gets is %d and the number of remaining chocolates is %d\n",
+                perChild, remaining);
         scanner.close();
     }
-} 
+}

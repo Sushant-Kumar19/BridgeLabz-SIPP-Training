@@ -1,3 +1,5 @@
+package Day1_ProgrammingElements;
+
 import java.util.Scanner;
 
 public class SquareSideFromPerimeter {
@@ -9,4 +11,4 @@ public class SquareSideFromPerimeter {
         System.out.printf("The length of the side is %.2f whose perimeter is %.2f\n", side, perimeter);
         scanner.close();
     }
-} 
+}

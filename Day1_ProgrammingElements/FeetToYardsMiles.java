@@ -1,3 +1,5 @@
+package Day1_ProgrammingElements;
+
 import java.util.Scanner;
 
 public class FeetToYardsMiles {
@@ -10,4 +12,4 @@ public class FeetToYardsMiles {
         System.out.printf("The distance in yards is %.2f while the distance in miles is %.4f\n", yards, miles);
         scanner.close();
     }
-} 
+}

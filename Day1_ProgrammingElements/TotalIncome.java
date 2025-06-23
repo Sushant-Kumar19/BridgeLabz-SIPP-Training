@@ -1,3 +1,5 @@
+package Day1_ProgrammingElements;
+
 import java.util.Scanner;
 
 public class TotalIncome {
@@ -8,7 +10,8 @@ public class TotalIncome {
         System.out.print("Enter bonus: ");
         double bonus = scanner.nextDouble();
         double totalIncome = salary + bonus;
-        System.out.printf("The salary is INR %.2f and the bonus is INR %.2f. Hence Total Income is INR %.2f\n", salary, bonus, totalIncome);
+        System.out.printf("The salary is INR %.2f and the bonus is INR %.2f. Hence Total Income is INR %.2f\n", salary,
+                bonus, totalIncome);
         scanner.close();
     }
-} 
+}

@@ -1,3 +1,5 @@
+package Day1_ProgrammingElements;
+
 import java.util.Scanner;
 
 public class TriangleArea {
@@ -12,4 +14,4 @@ public class TriangleArea {
         System.out.printf("The Area of the triangle in sq in is %.2f and sq cm is %.2f\n", areaIn2, areaCm2);
         scanner.close();
     }
-} 
+}
