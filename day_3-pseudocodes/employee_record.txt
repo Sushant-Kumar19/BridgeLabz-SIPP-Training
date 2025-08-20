@@ -16,8 +16,9 @@ function main() {
     employees.add(new Employee("Sara", "HR"));
     employees.add(new Employee("Mike", "IT"));
 
-    // Use Stream to filter by department (e.g., IT)
-    employees.stream()
-             .filter(e -> e.department == "IT")
-             .forEach(print employee name);
+ for (Employee e : employees) {
+    if (e.department.equals("IT")) {
+        System.out.println(e.name);
+    }
+}  
 }
