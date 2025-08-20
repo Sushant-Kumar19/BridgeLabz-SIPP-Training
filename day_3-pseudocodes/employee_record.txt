@@ -1,0 +1,23 @@
+class Employee {
+    String name;
+    String department;
+
+    constructor Employee(name, department) {
+        this.name = name;
+        this.department = department;
+    }
+}
+
+function main() {
+    // Create ArrayList of employees
+    ArrayList<Employee> employees = new ArrayList();
+
+    employees.add(new Employee("John", "IT"));
+    employees.add(new Employee("Sara", "HR"));
+    employees.add(new Employee("Mike", "IT"));
+
+    // Use Stream to filter by department (e.g., IT)
+    employees.stream()
+             .filter(e -> e.department == "IT")
+             .forEach(print employee name);
+}

@@ -1,0 +1,18 @@
+function main() {
+    // Create HashMap to store student name and marks
+    HashMap<String, Integer> studentScores = new HashMap();
+
+    // Add data
+    studentScores.put("Alice", 85);
+    studentScores.put("Bob", 92);
+    studentScores.put("Charlie", 78);
+
+    // Use Stream to find highest scorer
+    Entry<String, Integer> topStudent =
+        studentScores.entrySet()
+                     .stream()
+                     .max(by value)
+                     .get();
+
+    print "Top scorer: " + topStudent.getKey() + " with marks " + topStudent.getValue();
+}
