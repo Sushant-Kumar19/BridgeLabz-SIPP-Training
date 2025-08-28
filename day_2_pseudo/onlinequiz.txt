@@ -1,0 +1,9 @@
+ARRAY timeSlots[N]
+VARIABLE index = 0
+
+FUNCTION nextQuestion()
+    index = (index + 1) MOD N
+    PRINT "Time allocated: " + timeSlots[index]
+
+    IF timeSlots[index] <= 5
+        PRINT "Warning: Time almost up"
