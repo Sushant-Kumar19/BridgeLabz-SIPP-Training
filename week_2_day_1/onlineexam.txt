@@ -1,0 +1,27 @@
+CLASS User
+    ATTRIBUTES: username, password
+    METHOD login()
+        PRINT "Basic user login check"
+
+CLASS Student EXTENDS User
+    ATTRIBUTES: enrolledCourse
+    METHOD login()
+        IF credentials are valid AND enrolledCourse IS NOT NULL
+            PRINT "Student login successful. Show available exams"
+        ELSE
+            PRINT "Login failed. Check registration or enrollment"
+
+CLASS Admin EXTENDS User
+    ATTRIBUTES: staffID, adminPrivileges
+    METHOD login()
+        IF credentials are valid AND adminPrivileges = TRUE
+            PRINT "Admin login successful. Show exam management tools"
+        ELSE
+            PRINT "Login failed. Invalid staff credentials"
+
+MAIN
+    student = NEW Student("john123", "pass123", "Math")
+    student.login()
+
+    admin = NEW Admin("admin1", "adminpass", "STAFF101", TRUE)
+    admin.login()
