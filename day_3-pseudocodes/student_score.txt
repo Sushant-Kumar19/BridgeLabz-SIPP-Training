@@ -6,7 +6,7 @@ function main() {
 
     // Convert entrySet to list for index-based loop
     List<Entry<String, Integer>> entries = new ArrayList(studentScores.entrySet());
-
+ 
     Entry<String, Integer> topStudent = entries.get(0);
 
     for (int i = 1; i < entries.size(); i++) {
