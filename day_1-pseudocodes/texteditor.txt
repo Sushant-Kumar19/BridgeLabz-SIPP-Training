@@ -1,0 +1,15 @@
+Initialize stack undoStack
+text = ""
+
+function type(newText):
+    push current text into undoStack
+    text = text + newText
+
+function undo():
+    if undoStack is not empty:
+        text = pop from undoStack
+    else:
+        print "Nothing to undo"
+
+function display():
+    print text

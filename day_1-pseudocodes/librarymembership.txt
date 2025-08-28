@@ -1,0 +1,25 @@
+import java.time.LocalDate;
+import java.time.Period;
+
+class Member {
+    String name;
+    int id;
+    LocalDate membershipDate;
+
+    Member(String name, int id, LocalDate membershipDate) {
+        this.name = name;
+        this.id = id;
+        this.membershipDate = membershipDate;
+    }
+
+    boolean isMembershipValid() {
+        // Membership valid for 1 year
+        Period diff = Period.between(membershipDate, LocalDate.now());
+        return diff.getYears() < 1;
+    }
+
+    void displayInfo() {
+        System.out.println("Member: " + name + " (ID: " + id + ")");
+        System.out.println("Valid Membership: " + isMembershipValid());
+    }
+}
