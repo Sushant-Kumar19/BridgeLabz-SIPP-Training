@@ -1,0 +1,60 @@
+// Base class
+class Pet {
+    String name;
+    int age;
+
+    // Constructor
+    Pet(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void displayInfo() {
+        System.out.println("Pet: " + name + ", Age: " + age);
+    }
+}
+
+// Dog class
+class Dog extends Pet {
+    String breed;
+
+    Dog(String name, int age, String breed) {
+        super(name, age);  // Call parent constructor
+        this.breed = breed;
+    }
+
+    @Override
+    void displayInfo() {
+        System.out.println("Dog: " + name + ", Age: " + age + ", Breed: " + breed);
+    }
+}
+
+// Cat class
+class Cat extends Pet {
+    boolean indoor;
+
+    Cat(String name, int age, boolean indoor) {
+        super(name, age);
+        this.indoor = indoor;
+    }
+
+    @Override
+    void displayInfo() {
+        System.out.println("Cat: " + name + ", Age: " + age + ", Indoor: " + indoor);
+    }
+}
+
+// Bird class
+class Bird extends Pet {
+    String color;
+
+    Bird(String name, int age, String color) {
+        super(name, age);
+        this.color = color;
+    }
+
+    @Override
+    void displayInfo() {
+        System.out.println("Bird: " + name + ", Age: " + age + ", Color: " + color);
+    }
+}
