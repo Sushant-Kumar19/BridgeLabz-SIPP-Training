@@ -1,0 +1,4 @@
+LIST books
+
+FUNCTION filterBooks(books)
+    RETURN books.FILTER(book -> book.year > 2015 AND book.rating > 4.5)
